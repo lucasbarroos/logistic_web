@@ -21,7 +21,7 @@ export const LogoContainer = styled.div`
 
 export const Logo = styled.img`
     cursor: pointer;
-    height: 40px;
+    height: 50px;
     @media only screen and (max-width: 1116px) {
         text-align: center;
     }

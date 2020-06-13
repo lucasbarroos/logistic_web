@@ -30,6 +30,7 @@ import {
   LoginButton,
 } from './styles';
 
+const LogoImage = 'https://images.squarespace-cdn.com/content/v1/5aa97ac8372b96325bb9ad66/1537555277213-R6PW0UYCEGF6C3XR1YWO/ke17ZwdGBToddI8pDm48kOWMDVCH3pn9oG0fWe6Lf3xZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIFJZVeT3Vvf9XrysqEetFkvqCauJ1HIXnUMq5k01M2JQ/JD+Logistics.png';
 const Picture = 'https://nemsmbr.org/wp-content/uploads/2019/03/no-image-icon-md-2.png';
 
 const IconStyle = {
@@ -140,7 +141,7 @@ const Navigation = () => {
             <MenuIcon style={DrawerIconStyle} />
           </IconButton>
           <Link to="/">
-            {/* <Logo src={LogoImage} /> */}
+            <Logo src={LogoImage} />
           </Link>
         </div>
         <Divider />
@@ -172,12 +173,12 @@ const Navigation = () => {
           </ListItem>
         </List>
       </Drawer>
-      <Container>
+      <Container style={{ height: 70 }}>
         <ItemForm>
           <MenuIcon onClick={handleDrawerOpen} style={DropdownIconStyle} />
           <LogoContainer>
             <Link to="/">
-              {/* <Logo src={LogoImage} /> */}
+              <Logo src={LogoImage} />
             </Link>
           </LogoContainer>
           <SearchContainer>
