@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './pages/Home/index';
+import Home from './utils/Routes';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>

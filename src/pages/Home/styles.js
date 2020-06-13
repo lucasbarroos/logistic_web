@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    min-heigth: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 `;
 
 export const Title = styled.span`
