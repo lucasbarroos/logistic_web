@@ -4,19 +4,23 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
+import AppsIcon from '@material-ui/icons/Apps';
+import PublicIcon from '@material-ui/icons/Public';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
+import ReceiptIcon from '@material-ui/icons/Receipt';
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import HttpsIcon from '@material-ui/icons/Https';
+import PeopleIcon from '@material-ui/icons/People';
+import StoreMallDirectoryIcon from '@material-ui/icons/StoreMallDirectory';
+import LocationCityIcon from '@material-ui/icons/LocationCity';
+import LanguageIcon from '@material-ui/icons/Language';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import HistoricIcon from '@material-ui/icons/History';
 import BellIcon from '@material-ui/icons/NotificationsNone';
-import SubscriptionIcon from '@material-ui/icons/Subscriptions';
-import ScheduleIcon from '@material-ui/icons/Schedule';
-import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import VideoIcon from '@material-ui/icons/VideoCall';
-import AppIcons from '@material-ui/icons/Apps';
 import {
   Container,
   LogoContainer,
@@ -24,10 +28,10 @@ import {
   ItemForm,
   SearchContainer,
   Search,
-  SearchIcon,
+  // SearchIcon,
   PanelContainer,
   PanelPicture,
-  LoginButton,
+  // LoginButton,
 } from './styles';
 
 const LogoImage = 'https://images.squarespace-cdn.com/content/v1/5aa97ac8372b96325bb9ad66/1537555277213-R6PW0UYCEGF6C3XR1YWO/ke17ZwdGBToddI8pDm48kOWMDVCH3pn9oG0fWe6Lf3xZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIFJZVeT3Vvf9XrysqEetFkvqCauJ1HIXnUMq5k01M2JQ/JD+Logistics.png';
@@ -148,28 +152,52 @@ const Navigation = () => {
         <List>
           <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>
             <ListItem button>
-              <ListItemIcon style={DrawerIconStyle}><InboxIcon /></ListItemIcon>
+              <ListItemIcon style={DrawerIconStyle}><AppsIcon /></ListItemIcon>
               <ListItemText primary="Home" />
             </ListItem>
           </Link>
           <ListItem button>
-            <ListItemIcon style={DrawerIconStyle}><SubscriptionIcon /></ListItemIcon>
-            <ListItemText primary="Subscriptions" />
+            <ListItemIcon style={DrawerIconStyle}><PublicIcon /></ListItemIcon>
+            <ListItemText primary="World Overview" />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon style={DrawerIconStyle}><LocalShippingIcon /></ListItemIcon>
+            <ListItemText primary="Containers" />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon style={DrawerIconStyle}><ReceiptIcon /></ListItemIcon>
+            <ListItemText primary="Orders" />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon style={DrawerIconStyle}><TrendingUpIcon /></ListItemIcon>
+            <ListItemText primary="Reports" />
           </ListItem>
         </List>
         <Divider />
         <List>
           <ListItem button>
-            <ListItemIcon style={DrawerIconStyle}><VideoLibraryIcon /></ListItemIcon>
-            <ListItemText primary="Library" />
+            <ListItemIcon style={DrawerIconStyle}><HttpsIcon /></ListItemIcon>
+            <ListItemText primary="Users" />
           </ListItem>
           <ListItem button>
-            <ListItemIcon style={DrawerIconStyle}><HistoricIcon /></ListItemIcon>
-            <ListItemText primary="History" />
+            <ListItemIcon style={DrawerIconStyle}><PeopleIcon /></ListItemIcon>
+            <ListItemText primary="Clients" />
           </ListItem>
           <ListItem button>
-            <ListItemIcon style={DrawerIconStyle}><ScheduleIcon /></ListItemIcon>
-            <ListItemText primary="Watch later" />
+            <ListItemIcon style={DrawerIconStyle}><PeopleIcon /></ListItemIcon>
+            <ListItemText primary="Employess" />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon style={DrawerIconStyle}><StoreMallDirectoryIcon /></ListItemIcon>
+            <ListItemText primary="Products" />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon style={DrawerIconStyle}><LocationCityIcon /></ListItemIcon>
+            <ListItemText primary="Cities" />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon style={DrawerIconStyle}><LanguageIcon /></ListItemIcon>
+            <ListItemText primary="Countries" />
           </ListItem>
         </List>
       </Drawer>
@@ -187,7 +215,7 @@ const Navigation = () => {
           </SearchContainer>
           <PanelContainer>
             <VideoIcon style={IconStyle} />
-            <AppIcons style={IconStyle} />
+            <AppsIcon style={IconStyle} />
             <BellIcon style={IconStyle} />
             <Link to="/profile">
               <PanelPicture src={Picture} />
